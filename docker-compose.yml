@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  ticketing-sql:
+    build: .
+    container_name: ticketing-sql
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
